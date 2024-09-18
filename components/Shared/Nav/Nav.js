@@ -17,18 +17,18 @@ const Nav = () => {
     <>
 
       <li className="border-b border-teal-700 lg:border-0">
-        <Link className="text-green-800" href={"/work"}>Work</Link>
+        <Link className="text-[#125b5c]" href={"/work"}>Work</Link>
       </li>
       {/* Solution */}
       <li className="relative group hidden lg:block">
-        <span className="cursor-pointer flex items-center text-green-800">
+        <span className="cursor-pointer flex items-center text-[#125b5c]">
           Solution <GoChevronDown className="ml-1 font-bold " />
         </span>
 
         <ul className="  py-10 absolute lg:left-[-1000px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
           <div className="flex justify-center gap-[500px]">
           <div className="grid grid-col-1 px-10">
-            <Link href='/brand-sutons'>
+            <Link href='/brand-solutions'>
             <li className="font-bold text-2xl">
            Brand Solution
             </li>
@@ -103,7 +103,7 @@ const Nav = () => {
 
       {/* About */}
       <li className="relative group hidden lg:block">
-        <span className="cursor-pointer flex items-center text-green-800">
+        <span className="cursor-pointer flex items-center text-[#125b5c]">
           About <GoChevronDown className="ml-1 font-bold " />
         </span>
 
@@ -180,59 +180,33 @@ Best Outdoor Campaign (Bronze)
 
       {/* Blogs */}
       <li className="relative group hidden lg:block">
-        <span className="cursor-pointer flex items-center text-green-800">
-          Resoures <GoChevronDown className="ml-1 font-bold " />
+        <span className="cursor-pointer flex items-center text-[#125b5c]">
+          Resources <GoChevronDown className="ml-1 font-bold " />
         </span>
 
         <ul className="  py-10 px-10 absolute lg:left-[-1100px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
           <div className="flex justify-center gap-72 py-10">
           <div className="grid grid-col-1 gap-5">
+            <Link href='/blogs'>
             <li className="font-bold text-xl">
-            Flame Awards 2024 - LB and Habson Static
+            Blogs
             </li>
+            </Link>
 
+            <Link href='/the-edge'>
             <li className="font-bold text-xl">
-            A Magnificent Masterstroke!(LB & Habson Logo)
+           The Edge
             </li>
-
-            <li className="font-bold text-xl">
-            Ten Awards
-Five golds, Three silvers, Two bronzes
-            </li>
-
-            <li className="font-bold text-xl">
-            Flame Awards Asia 2024
-            </li>
-
-            <li className="font-bold text-xl">
-            Digital Marketing Awards 2022 - Living Brands
-            </li>
-
-            <li className="font-bold text-xl">
-            Pusti Home Chef 
-Best Digital Campaign by New Agency (Silver) 
-
-            </li>
-
-            <li className="font-bold text-xl">
-            Commward 2022 - Habson Communication
-            </li>
-
-            <li className="font-bold text-xl">
-            PUMA Flagship Store Launch
-Best Outdoor Campaign (Bronze)
-            </li>
+            </Link>
             
           </div>
           <div className="w-[100%]">
-              <Link href={"/about-details"} className="">
-                
+              <Link href={"/"} className="">  
                   <img
-                    className="w-full h-[40vh] rounded-sm"
+                    className="w-[80%] h-[40vh] rounded-sm"
                     src="https://i.postimg.cc/brZ136ZB/Whats-App-Image-2024-09-17-at-12-59-57.jpg"
                     alt="Shoes"
                   />
-               
               </Link>
             </div>
             </div>
@@ -240,7 +214,7 @@ Best Outdoor Campaign (Bronze)
       </li>
 
       <li className="border-b border-teal-700 lg:border-0">
-        <Link className="text-green-800" href={"/career"}>Careers</Link>
+        <Link className="text-[#125b5c]" href={"/career"}>Careers</Link>
       </li>
     </>
   );
@@ -248,13 +222,13 @@ Best Outdoor Campaign (Bronze)
 
   return (
     <div className="bg-base-100 z-50">
-      <div className="navbar container mx-auto">
+      <div className="navbar container mx-auto flex justify-between">
         <div className="w-48 md:w-56 navbar-start ml-5 lg:ml-0">
           <Link href="/">
             <Image src={logo} className="w-32" alt="Habson logo"></Image>
           </Link>
         </div>
-        <div className="navbar-end">
+        <div className="">
           <div className="dropdown dropdown-left ">
             <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
               <svg
@@ -282,8 +256,8 @@ Best Outdoor Campaign (Bronze)
             </ul>
           </div>
         </div>
-        <div className="navbar-end hidden lg:flex ">
-          <ul className="menu menu-horizontal px-1 z-50">
+        <div className=" hidden lg:flex ">
+          <ul className="menu menu-horizontal z-50">
             {
               navItems
             }
