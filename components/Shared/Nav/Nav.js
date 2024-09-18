@@ -17,59 +17,46 @@ const Nav = () => {
     <>
 
       <li className="border-b border-teal-700 lg:border-0">
-        <Link href={"/work"}>Work</Link>
+        <Link className="text-green-800" href={"/work"}>Work</Link>
       </li>
       {/* Solution */}
-      <li className="relative group hidden lg:block ">
-        <span className="cursor-pointer flex items-center">
-          Solutions <GoChevronDown className="ml-1 font-bold " />
+      <li className="relative group hidden lg:block">
+        <span className="cursor-pointer flex items-center text-green-800">
+          Solution <GoChevronDown className="ml-1 font-bold " />
         </span>
-        <ul className="absolute lg:left-[-870px] lg:w-[1530px]  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
-          <div className="flex justify-center items-center gap-6 py-10">
-            <Link href="/sub-company">
-              <div className="card bg-base-100 w-96 shadow-xl overflow-hidden">
-                <figure>
-                  <img
-                    className="w-52 h-52"
-                    src="https://i.postimg.cc/LsR1YHLM/fcl-02.png"
-                    alt="M/S MAN ENTERPRISE"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="text-sm text-center">Brand Solutions</h2>
-                </div>
-              </div>
-            </Link>
 
-            <Link href={"media-solutions"}>
-              <div className="card bg-base-100 w-96 shadow-xl overflow-hidden">
-                <figure>
-                  <img
-                    className="w-52 h-52"
-                    src="https://i.postimg.cc/LsR1YHLM/fcl-02.png"
-                    alt="M/S MAN ENTERPRISE"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="text-sm text-center">Brand Solutions</h2>
-                </div>
-              </div>
+        <ul className="  py-10 absolute lg:left-[-1000px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
+          <div className="flex justify-center gap-[500px]">
+          <div className="grid grid-col-1 px-10">
+            <Link href='/brand-sutons'>
+            <li className="font-bold text-2xl">
+           Brand Solution
+            </li>
             </Link>
-            <Link href={"tech-solutions"}>
-              <div className="card bg-base-100 w-96 shadow-xl overflow-hidden">
-                <figure>
-                  <img
-                    className="w-52 h-52"
-                    src="https://i.postimg.cc/LsR1YHLM/fcl-02.png"
-                    alt="M/S MAN ENTERPRISE"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="text-sm text-center">Tech Solutions</h2>
-                </div>
-              </div>
+            <Link href='/media-solutions'>
+            <li className="font-bold text-2xl">
+           Media Solution
+            </li>
             </Link>
+            <Link href='/tech-solutions'>
+            <li className="font-bold text-2xl">
+           Tech Solution
+            </li>
+            </Link>
+            
           </div>
+          <div className="w-[100%]">
+              <Link href={"/about-details"} className="">
+                
+                  <img
+                    className="w-[100%] h-[40vh] rounded-sm"
+                    src="https://i.postimg.cc/8PDs8ccw/kgrit-U3-IYXE-HD-1.jpg"
+                    alt="Shoes"
+                  />
+               
+              </Link>
+            </div>
+            </div>
         </ul>
       </li>
 
@@ -116,7 +103,7 @@ const Nav = () => {
 
       {/* About */}
       <li className="relative group hidden lg:block">
-        <span className="cursor-pointer flex items-center">
+        <span className="cursor-pointer flex items-center text-green-800">
           About <GoChevronDown className="ml-1 font-bold " />
         </span>
 
@@ -193,46 +180,67 @@ Best Outdoor Campaign (Bronze)
 
       {/* Blogs */}
       <li className="relative group hidden lg:block">
-        <span className="cursor-pointer flex items-center">
-          Blog <GoChevronDown className="ml-1 font-bold " />
+        <span className="cursor-pointer flex items-center text-green-800">
+          Resoures <GoChevronDown className="ml-1 font-bold " />
         </span>
 
-        <ul className="absolute ease-in duration-300 lg:left-[-1200px] lg:w-[1530px]  hidden bg-white text-black shadow-md rounded-md opacity- group-hover:opacity-100 group-hover:block transition-opacity  p-2">
-          <div className="flex justify-center items-center gap-6 py-10">
-            <div className="card bg-base-100 w-96 shadow-xl">
-              <Link href={"/blogs"}>
-                <figure>
-                  <img
-                    className="w-full h-52 rounded-xl"
-                    src="https://t4.ftcdn.net/jpg/02/49/04/93/360_F_249049329_BpYUPt5TGST3qTTfOJVpTakAdCLFzcg1.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">How We Work</h2>
-                </div>
-              </Link>
-            </div>
-            <div className="card bg-base-100 w-96 shadow-xl">
-              <Link href={"/the-edge"}>
-                <figure>
-                  <img
-                    className="w-full h-52 rounded-xl"
-                    src="https://nmccat.com/wp-content/uploads/2020/09/Cat-Backhoe-1.jpg"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">The Edge</h2>
-                </div>
-              </Link>
-            </div>
+        <ul className="  py-10 px-10 absolute lg:left-[-1100px] lg:w-[1530px] overflow-hidden  hidden bg-white text-black shadow-md rounded-md opacity-0 group-hover:opacity-100 group-hover:block transition-opacity duration-300 ease-in-out p-2">
+          <div className="flex justify-center gap-72 py-10">
+          <div className="grid grid-col-1 gap-5">
+            <li className="font-bold text-xl">
+            Flame Awards 2024 - LB and Habson Static
+            </li>
+
+            <li className="font-bold text-xl">
+            A Magnificent Masterstroke!(LB & Habson Logo)
+            </li>
+
+            <li className="font-bold text-xl">
+            Ten Awards
+Five golds, Three silvers, Two bronzes
+            </li>
+
+            <li className="font-bold text-xl">
+            Flame Awards Asia 2024
+            </li>
+
+            <li className="font-bold text-xl">
+            Digital Marketing Awards 2022 - Living Brands
+            </li>
+
+            <li className="font-bold text-xl">
+            Pusti Home Chef 
+Best Digital Campaign by New Agency (Silver) 
+
+            </li>
+
+            <li className="font-bold text-xl">
+            Commward 2022 - Habson Communication
+            </li>
+
+            <li className="font-bold text-xl">
+            PUMA Flagship Store Launch
+Best Outdoor Campaign (Bronze)
+            </li>
+            
           </div>
+          <div className="w-[100%]">
+              <Link href={"/about-details"} className="">
+                
+                  <img
+                    className="w-full h-[40vh] rounded-sm"
+                    src="https://i.postimg.cc/brZ136ZB/Whats-App-Image-2024-09-17-at-12-59-57.jpg"
+                    alt="Shoes"
+                  />
+               
+              </Link>
+            </div>
+            </div>
         </ul>
       </li>
 
       <li className="border-b border-teal-700 lg:border-0">
-        <Link href={"/career"}>Careers</Link>
+        <Link className="text-green-800" href={"/career"}>Careers</Link>
       </li>
     </>
   );
@@ -280,7 +288,7 @@ Best Outdoor Campaign (Bronze)
               navItems
             }
           </ul>
-          <Link href={"/contact"}>
+          <Link  href={"/contact"}>
             <Button>
               Contact Us <FaArrowRightLong />
             </Button>
