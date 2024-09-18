@@ -9,3 +9,12 @@
 .hide {
     top: -100px;
 }
+
+.bg {
+    text-decoration: none;
+    color: blueviolet;
+  }
+  
+  .bg:active {
+    color: brown;
+  }

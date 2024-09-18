@@ -2,8 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Items = () => {
-  const items = [
+const BlogItems = () => {
+  const blogitems = [
     {
       id: 1,
       category: "Casestudy",
@@ -372,9 +372,9 @@ const Items = () => {
   ];
   return (
     <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7 gap-y-20">
-      {items.map((item) => (
-        <Link href='/work-details'>
-          <div key={item.id}>
+      { blogitems.map((item) => (
+        <Link href='/blog-details'>
+            <div key={item.id}>
           <Image
             src={item.img}
             alt=""
@@ -391,4 +391,4 @@ const Items = () => {
   );
 };
 
-export default Items;
+export default BlogItems;
